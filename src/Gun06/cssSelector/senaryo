@@ -1,0 +1,17 @@
+Senaryo
+
+1- https://formsmarts.com/form/yu?mode=h5 sitesini açın
+
+2- Business i tıklayın.   input[id$='4586_0']    input#u_wta_4586_0
+
+3- discover XYZ ye tıklatın ve online Advertising i seçin
+   select[id$='_4588']  tıklat
+   option[value='Online Advertising']   tıklat
+
+4- Every day i seçin  input[value='Every Day']
+
+5- Good u seçin input[value='Good']
+
+6- using XYZ yi tıklatın ve 3.seçeneği seçin
+   select[id$='_4597']  tıklatalım
+   select[id$='_4597'] > :nth-child(4) tıklatalım

@@ -1,0 +1,44 @@
+1- https://www.saucedemo.com/  sitesini açın
+
+2- login işlemini yapınız.
+   //input[@id='user-name']   sendKeys standard_user
+   //input[@id='password']  sendKeys secret_sauce
+   //input[@id='login-button']
+
+
+3- Sauce Labs Backpack  a tıklatın ve sepete ekletin.
+   //div[text()='Sauce Labs Backpack']  tıklat
+   //button[text()='ADD TO CART']
+
+4- Sonra geri dönün
+   //button[text()='<- Back']
+
+5- Sauce Labs Bolt T-Shirt  a tıklatın ve sepete ekleyin.
+   //div[text()='Sauce Labs Bolt T-Shirt']
+   //button[text()='ADD TO CART']
+
+6- sepete tıklatın
+   //div[@id='shopping_cart_container']
+
+7- CheckOut a tıklatın
+   //a[text()='CHECKOUT']   tıklatacağız
+
+8- kullanıcı bilgilerini doldurup Continue ya tıklatın
+   //input[@id='first-name']  sendkeys isim
+   //input[@id='last-name']  sendkeys lastname
+   //input[@id='postal-code']  zipkod
+   //input[@class='btn_primary cart_button']  tıklat.
+
+9- Burada her bir eşyanın ücretlerinin toplamının
+   aşağıdaki Item total e eşit olup olmadığını Assert ile test ediniz.
+   (//div[@class='inventory_item_price'])[1]
+   //a[@id='item_4_title_link']/following-sibling::div/following-sibling::div
+
+
+   //div[@class='summary_subtotal_label']
+
+
+//div[text()='Sauce Labs Backpack']/parent::*/parent::div -> /parent::*  bir üst e gider.parent e
+//div[text()='Sauce Labs Backpack']/../../..   -> aynı işlemi para üste gider /..  ile
+((//div[@id='inventory_container'])[1]/div/div)[2]   -> [2] den önceki kısımda bulunan elamanlardan 2.sini bulur
+(//div[@id='inventory_container'])[1]/div/div/following-sibling::div  -> /following-sibling::div kardeş div i bulur

@@ -1,0 +1,26 @@
+/*
+TODO
+   Senaryo
+   1- https://www.facebook.com/ sitesine giriniz.
+   2- Yeni hesap oluştura tıklayınız.
+   3- Formdaki tüm bilgileri giriniz.
+
+   (//a[starts-with(@id,'u_')])[3]  -> parantez içindeki locator a göre 3 tane bulundu.köşeli parantez  ile 3.alındı
+    yada
+    a[id^='u_'][id$='_2'] --> CssSelector ile bulabiliriz
+
+        firstname -> u_16_b
+        lastname -> u_16_d
+        cep-email -> u_16_g
+        tekrar email -> u_16_j
+
+        yeniSifre -> password_step_input
+
+        gün -> day -> select
+        ay -> month -> select
+        yıl -> year -> select
+
+        kadın -> u_16_4
+        erkek -> u_16_5
+        özel -> u_16_6
+*/
